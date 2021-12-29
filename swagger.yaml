@@ -59,7 +59,7 @@ paths:
       parameters:
       - name: "index"
         in: "path"
-        description: "เช่น 1, 2, 3 ไปเรื่อย ๆ หากไม่ใส่จะทำการดึง Index 0"
+        description: "เช่น 1, 2, 3, 4 ไปเรื่อย ๆ หากไม่ใส่จะทำการดึง Index 0"
         required: true
         type: "integer"
         format: "int64"
@@ -96,7 +96,7 @@ paths:
       parameters:
       - name: "index"
         in: "path"
-        description: "เช่น 1, 2, 3 ไปเรื่อย ๆ หากไม่ใส่จะทำการดึง Index 0"
+        description: "เช่น 1, 2, 3, 4 ไปเรื่อย ๆ หากไม่ใส่จะทำการดึง Index 0"
         required: true
         type: "integer"
         format: "int64"
@@ -133,7 +133,7 @@ paths:
       parameters:
       - name: "index"
         in: "path"
-        description: "เช่น 1, 2, 3 ไปเรื่อย ๆ หากไม่ใส่จะทำการดึง Index 0"
+        description: "เช่น 1, 2, 3, 4 ไปเรื่อย ๆ หากไม่ใส่จะทำการดึง Index 0"
         required: true
         type: "integer"
         format: "int64"
@@ -170,7 +170,7 @@ paths:
       parameters:
       - name: "index"
         in: "path"
-        description: "เช่น 1, 2, 3 ไปเรื่อย ๆ หากไม่ใส่จะทำการดึง Index 0"
+        description: "เช่น 1, 2, 3, 4 ไปเรื่อย ๆ หากไม่ใส่จะทำการดึง Index 0"
         required: true
         type: "integer"
         format: "int64"
