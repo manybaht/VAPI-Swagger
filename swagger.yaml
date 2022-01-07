@@ -21,11 +21,6 @@ tags:
   description: "ดึงข้อมูลคลิปวีเฉพาะ Hololive (ย้อนหลังสูงสุด 7 วัน)"
 - name: "Vtubers Nijisanji"
   description: "ดึงข้อมูลคลิปวีเฉพาะ Nijisanji (ย้อนหลังสูงสุด 7 วัน)"
-- name: "Info"
-  description: "ดึงข้อมูลกลุ่มวี, วี นั้น ๆ"
-  externalDocs:
-    description: "VTBS Credit"
-    url: "https://vdb.vtbs.moe"
 schemes:
 - "https"
 - "http"
@@ -184,81 +179,6 @@ paths:
       description: "ดึงสถิติข้อมูลคลิปวี Nijisanji ทั้งหมดคราว ๆ"
       produces:
       - "application/json"
-      responses:
-        200:
-          description: "successful operation"
-  /info/group/:
-    get:
-      tags:
-      - "Info"
-      description: "ดึงข้อมูลกลุ่มวีทั้งหมด"
-      produces:
-      - "application/json"
-      responses:
-        200:
-          description: "successful operation"
-  /info/group/{uuid}/:
-    get:
-      tags:
-      - "Info"
-      description: "ดึงข้อมูลวีจากกลุ่มนั้น ๆ"
-      produces:
-      - "application/json"
-      parameters:
-      - name: "uuid"
-        in: "path"
-        description: "ดึงเฉพาะวีจาก UUID ของกลุ่มวีนั้น ๆ"
-        required: true
-        type: "string"
-      responses:
-        200:
-          description: "successful operation"
-  /info/vtuber/:
-    get:
-      tags:
-      - "Info"
-      description: "ดึงข้อมูลวีทั้งหมด"
-      produces:
-      - "application/json"
-      responses:
-        200:
-          description: "successful operation"
-  /info/vtuber/{uuid}/:
-    get:
-      tags:
-      - "Info"
-      description: "ดึงข้อมูลวีนั้น ๆ"
-      produces:
-      - "application/json"
-      parameters:
-      - name: "uuid"
-        in: "path"
-        description: "ดึงเฉพาะวีจาก UUID ของวีนั้น ๆ"
-        required: true
-        type: "string"
-      responses:
-        200:
-          description: "successful operation"
-  /info/platform/{name}/:
-    get:
-      tags:
-      - "Info"
-      description: "ดึงข้อมูลวีทั้งหมดจาก Platform ที่ระบุ"
-      produces:
-      - "application/json"
-      parameters:
-      - name: "name"
-        in: "path"
-        description: "ดึงเฉพาะวีทั้งหมดจาก Platform ที่ระบุ"
-        required: true
-        type: "array"
-        items:
-          type: "string"
-          enum:
-          - "youtube"
-          - "twitch"
-          - "bilibili"
-          default: "available"
       responses:
         200:
           description: "successful operation"
