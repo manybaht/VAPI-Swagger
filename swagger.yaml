@@ -29,6 +29,17 @@ paths:
     get:
       tags:
       - "Default"
+      description: "ดึงข้อมูลเจ้าหลายบาท"
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "successful operation"
+  /live/:
+    get:
+      tags:
+      - "Default"
+      description: "ดึงข้อมูลไลฟ์เจ้าหลาย และไลฟ์ตั้งล่วงหน้าในอนาคต"
       produces:
       - "application/json"
       responses:
@@ -38,26 +49,19 @@ paths:
     get:
       tags:
       - "Vtubers Thai"
-      description: "ดึงข้อมูลคลิปวีไทย Index 0 (หน้าละ 50 ข้อมูล)"
+      description: "ดึงข้อมูลคลิปวีไทยสูงสุด 500 ข้อมูล"
       produces:
       - "application/json"
       responses:
         200:
           description: "successful operation"
-  /other/thai/{index}/:
+  /other/thai/live:
     get:
       tags:
       - "Vtubers Thai"
-      description: "ดึงข้อมูลคลิปวีไทย Index อื่น ๆ (หน้าละ 50 ข้อมูล)"
+      description: "ดึงข้อมูลไลฟ์วีไทย ณ ตอนนี้ และตั้งไลฟ์ในอนาคต"
       produces:
       - "application/json"
-      parameters:
-      - name: "index"
-        in: "path"
-        description: "เช่น 1, 2, 3, 4 ไปเรื่อย ๆ หากไม่ใส่จะทำการดึง Index 0"
-        required: true
-        type: "integer"
-        format: "int64"
       responses:
         200:
           description: "successful operation"
@@ -75,26 +79,19 @@ paths:
     get:
       tags:
       - "Vtubers All"
-      description: "ดึงข้อมูลคลิปวีทั้งหมด Index 0 (หน้าละ 50 ข้อมูล)"
+      description: "ดึงข้อมูลคลิปวีทั้งหมดสูงสุด 500 ข้อมูล"
       produces:
       - "application/json"
       responses:
         200:
           description: "successful operation"
-  /other/all/{index}/:
+  /other/all/live:
     get:
       tags:
       - "Vtubers All"
-      description: "ดึงข้อมูลคลิปวีทั้งหมด Index อื่น ๆ (หน้าละ 50 ข้อมูล)"
+      description: "ดึงข้อมูลไลฟ์ทั้งหมด ณ ตอนนี้ และตั้งไลฟ์ในอนาคต"
       produces:
       - "application/json"
-      parameters:
-      - name: "index"
-        in: "path"
-        description: "เช่น 1, 2, 3, 4 ไปเรื่อย ๆ หากไม่ใส่จะทำการดึง Index 0"
-        required: true
-        type: "integer"
-        format: "int64"
       responses:
         200:
           description: "successful operation"
@@ -112,26 +109,19 @@ paths:
     get:
       tags:
       - "Vtubers Hololive"
-      description: "ดึงข้อมูลคลิปวี Hololive Index 0 (หน้าละ 50 ข้อมูล)"
+      description: "ดึงข้อมูลคลิปวี Hololive สูงสุด 500 ข้อมูล"
       produces:
       - "application/json"
       responses:
         200:
           description: "successful operation"
-  /other/holo/{index}/:
+  /other/holo/live:
     get:
       tags:
       - "Vtubers Hololive"
-      description: "ดึงข้อมูลคลิปวี Hololive อื่น ๆ (หน้าละ 50 ข้อมูล)"
+      description: "ดึงข้อมูลไลฟ์ Hololive ณ ตอนนี้ และตั้งไลฟ์ในอนาคต"
       produces:
       - "application/json"
-      parameters:
-      - name: "index"
-        in: "path"
-        description: "เช่น 1, 2, 3, 4 ไปเรื่อย ๆ หากไม่ใส่จะทำการดึง Index 0"
-        required: true
-        type: "integer"
-        format: "int64"
       responses:
         200:
           description: "successful operation"
@@ -149,26 +139,19 @@ paths:
     get:
       tags:
       - "Vtubers Nijisanji"
-      description: "ดึงข้อมูลคลิปวี Nijisanji Index 0 (หน้าละ 50 ข้อมูล)"
+      description: "ดึงข้อมูลคลิปวี Nijisanji สูงสุด 500 ข้อมูล"
       produces:
       - "application/json"
       responses:
         200:
           description: "successful operation"
-  /other/niji/{index}/:
+  /other/niji/live:
     get:
       tags:
       - "Vtubers Nijisanji"
-      description: "ดึงข้อมูลคลิปวี Nijisanji อื่น ๆ (หน้าละ 50 ข้อมูล)"
+      description: "ดึงข้อมูลไลฟ์ Nijisanji ณ ตอนนี้ และตั้งไลฟ์ในอนาคต"
       produces:
       - "application/json"
-      parameters:
-      - name: "index"
-        in: "path"
-        description: "เช่น 1, 2, 3, 4 ไปเรื่อย ๆ หากไม่ใส่จะทำการดึง Index 0"
-        required: true
-        type: "integer"
-        format: "int64"
       responses:
         200:
           description: "successful operation"
