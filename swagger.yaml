@@ -35,7 +35,7 @@ paths:
       responses:
         200:
           description: "successful operation"
-  /live/:
+  /live:
     get:
       tags:
       - "Default"
@@ -45,7 +45,7 @@ paths:
       responses:
         200:
           description: "successful operation"
-  /other/thai/:
+  /other/thai:
     get:
       tags:
       - "Vtubers Thai"
@@ -65,7 +65,7 @@ paths:
       responses:
         200:
           description: "successful operation"
-  /other/thai/stats/:
+  /other/thai/stats:
     get:
       tags:
       - "Vtubers Thai"
@@ -75,7 +75,7 @@ paths:
       responses:
         200:
           description: "successful operation"
-  /other/all/:
+  /other/all:
     get:
       tags:
       - "Vtubers All"
@@ -95,7 +95,7 @@ paths:
       responses:
         200:
           description: "successful operation"
-  /other/all/stats/:
+  /other/all/stats:
     get:
       tags:
       - "Vtubers All"
@@ -105,7 +105,7 @@ paths:
       responses:
         200:
           description: "successful operation"
-  /other/holo/:
+  /other/holo:
     get:
       tags:
       - "Vtubers Hololive"
@@ -125,7 +125,7 @@ paths:
       responses:
         200:
           description: "successful operation"
-  /other/holo/stats/:
+  /other/holo/stats:
     get:
       tags:
       - "Vtubers Hololive"
@@ -135,7 +135,7 @@ paths:
       responses:
         200:
           description: "successful operation"
-  /other/niji/:
+  /other/niji:
     get:
       tags:
       - "Vtubers Nijisanji"
@@ -155,7 +155,7 @@ paths:
       responses:
         200:
           description: "successful operation"
-  /other/niji/stats/:
+  /other/niji/stats:
     get:
       tags:
       - "Vtubers Nijisanji"
